@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
+
+    <style>
+        .name{
+            position: relative;
+            top: 5px;
+            color: rgba(9, 86, 132, 0.717);
+            width: max-content;
+            padding: 5px;
+            box-shadow: 6px 5px 2px rgba(9, 86, 132, 0.717);
+
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1 class="name">Chat-App</h1>
     <input type="text" id="msg" placeholder="Enter your message">
     <button id="btn">Click</button>
     <div id="messages"></div>
-</head>
-<body>
-    <h1>Chatting</h1>
+   
     <script src="/socket.io/socket.io.js"></script>
     <script>
             const socket = io()
