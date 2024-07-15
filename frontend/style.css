@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -6,9 +10,48 @@ html{
 body{
     background: rgb(0, 0, 0);
 }
+
 .container{
-    margin: 2% 10% 0 10%;
+    width: 100%;
+    display: grid;
+    grid-template-rows:12% 78% 10%;
+    grid-template-columns: 12% 78% 10%;
+    gap: 0%;
+    
 }
+.side-bar{
+    background: red;
+    grid-row: 1/3;
+    grid-column: 1/2;
+
+}
+.sidebar-list{
+    list-style: none;
+    color: white;
+    
+    margin:10% 10% 0 20%;
+    background:violet;
+    width: max-content;
+}
+.content{
+    width: 100%;
+    background:wheat;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    height: 500vh;
+}
+
+.tools{
+    background-color: aquamarine;
+    width: 100%;
+    height: 65vh;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    
+    position: sticky;top: 0px;
+}
+
+
 .name{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
@@ -16,10 +59,13 @@ body{
     color: rgb(229, 245, 7);
     width: max-content;
     padding: 5px;
+    margin: 2% 0 5% 5%;
     box-shadow: 6px 5px 2px rgb(239, 192, 5);
 }
+
+
 #msg{
-    margin: 2% 0 0 0;
+    margin: 4% 0 0 10%;
     width: 250px;
     height: 1.4rem;
     padding: 5px 10px 5px 10px;

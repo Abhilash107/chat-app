@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6afefce1fa.js" crossorigin="anonymous"></script>
     <title>Chat App</title>
 
 </head>
 <body>
-   
     <div class="container">
-        <h1 class="name">Chat-App</h1>
-        <input type="text" id="msg" placeholder="Enter your message...">
-        <button id="btn">Click</button>
-        <div id="messages"></div>
+        <div class="side-bar">
+            <h1 class="name">Chat-App</h1>
+            <div class="info">
+                <ul class="sidebar-list">
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-regular fa-circle"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-gear"></i></li>
+                    <li> <i class="fa-solid fa-clock-rotate-left"></i></li>
+                </ul>  
+
+            </div>
+           
+    
+        </div>
+    
+    
+        <div class="content">
+            
+            <input type="text" id="msg" placeholder="Enter your message...">
+            <button id="btn">Click</button>
+            <div id="messages"></div>
+        </div>
+
+        <div class="tools">
+            sfger
+        </div>
+
     </div>
+    
     
     
     <script src="/socket.io/socket.io.js"></script>
@@ -45,7 +70,6 @@
                 messages.appendChild(p)
                 
             })
-
 
             function escapeHtml(text) {
                 const div = document.createElement('div');
